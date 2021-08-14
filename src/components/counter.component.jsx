@@ -23,11 +23,6 @@ class Counter extends Component {
     this.setState({ items: array });
   };
 
-  handleDelete = (counterId) => {
-    const counters = this.state.counters.filter((c) => c.id !== counterId);
-    this.setState({ counters });
-  };
-
   render() {
     return (
       <>
