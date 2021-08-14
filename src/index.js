@@ -1,12 +1,16 @@
+import "bootstrap/dist/css/bootstrap.min.css";
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
+import Counter from './components/counter.component';
+import Header from './components/header.component';
 import reportWebVitals from './reportWebVitals';
-
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <Header/>
+    <Counter />
+    <Counter/>
+    <Counter/>
+    <Counter/>
   </React.StrictMode>,
   document.getElementById('root')
 );
