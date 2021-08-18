@@ -23,8 +23,7 @@ class Counters extends Component {
 
   handleIncriment = (id) => {
     const counters = this.state.counters.map((counter, index) => {
-      if (this.state.counters.indexOf(counter) === id)
-        return { id: counter.id, value: counter.value + 1 };
+      if (counter.id === id) return { id: index, value: counter.value + 1 };
       return counter;
     });
     this.setState({ counters: counters });
@@ -32,8 +31,7 @@ class Counters extends Component {
 
   handleDecriment = (id) => {
     const counters = this.state.counters.map((counter, index) => {
-      if (this.state.counters.indexOf(counter) === id)
-        return { id: counter.id, value: counter.value - 1 };
+      if (counter.id === id) return { id: index, value: counter.value - 1 };
       return counter;
     });
     this.setState({ counters: counters });
