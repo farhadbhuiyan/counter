@@ -9,7 +9,7 @@ class Header extends Component {
             <a class="navbar-brand" href="#demo">
               Navbar
               <span class="badge bg-secondary p-2">
-                {this.props.totalUpdates}
+                {this.props.nonZeroItems}
               </span>
             </a>
           </nav>
